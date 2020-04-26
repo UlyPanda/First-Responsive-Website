@@ -1,0 +1,89 @@
+section { 
+  grid-area: section; 
+  background-color: #5B0140;
+  display:grid;
+  align-content: center;
+  padding:20px;
+
+}
+p {
+  font-size:25px;
+  display:flex;
+  text-align: center;
+  flex-direction: column;
+  flex-wrap: wrap;
+
+
+}
+h2 {
+  padding-left:150px;
+  font-size: 3em;
+}
+#colorbox {
+  background-color: aqua;
+  color:aqua;
+  padding:10px;
+  width:50%;
+  border: 1px solid aqua;
+  margin-left:auto;
+  margin-right:auto;
+}
+#colorbox2 {
+  background-color:crimson;
+  color:crimson;
+  padding:10px;
+  width:50%;
+  border: 1px solid crimson;
+  margin-left:auto;
+  margin-right:auto;
+}
+#colorbox3 {
+  background-color:orange;
+  color:orange;
+  padding:10px;
+  width:50%;
+  border: 1px solid orange;
+  margin-left:auto;
+  margin-right:auto;
+}
+
+aside { 
+  grid-area: aside; 
+background-color: #5B0140;
+display:grid;
+justify-content: center;
+align-content: center;
+padding:5px;
+}
+
+article { 
+  background-color: #5B0140;
+  grid-area: article; 
+  padding:20px;
+  display:grid;
+  justify-content: center;
+  align-content: center;
+}
+
+header { 
+  grid-area: header;
+  background-color: #3D6515;
+  display:grid;
+  align-content: center;
+  justify-content: center;
+  font-size: 3.5em;
+ }
+span {
+  font-size:1.1em;
+}
+* {
+  color:whitesmoke;
+}
+@media (min-width: 576px){.grid-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 25em 100%;
+  grid-template-areas: 
+  "header header header" 
+  "section aside article"
+} }
